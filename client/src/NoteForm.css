@@ -1,0 +1,65 @@
+/* NoteForm.css - Modern, clean styles for the note form */
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 28px 20px 20px 20px;
+  margin-bottom: 24px;
+}
+
+.note-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #3730a3;
+  display: block;
+}
+
+.note-form input,
+.note-form textarea {
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s, box-shadow 0.2s;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  resize: vertical;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border: 1.5px solid #6366f1;
+  box-shadow: 0 0 0 2px #6366f133;
+  outline: none;
+}
+
+.note-form button {
+  background: linear-gradient(90deg, #6366f1 60%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(99,102,241,0.08);
+}
+
+.note-form button:hover {
+  background: linear-gradient(90deg, #4f46e5 60%, #2563eb 100%);
+  box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+}
+
+@media (max-width: 600px) {
+  .note-form {
+    padding: 14px 4px 10px 4px;
+  }
+}
